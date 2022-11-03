@@ -1,0 +1,22 @@
+body{
+  font-family: 'Vollkorn', Georgia, serif;
+}
+/* CSS Reset */
+body, h1, h2, p, ul, li, blockquote{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+span{
+  display: block;
+}
+a{
+  text-decoration: none;
+}
+img{
+  border-radius: 5px;
+  width: 100%;
+  display: block;
+}
+
+

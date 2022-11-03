@@ -1,0 +1,159 @@
+.content {
+  margin: 0 auto;
+  max-width: 1125px;
+  padding: 37.5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 37.5px;
+}
+.col-wide{
+  grid-column: 1 / -1;
+}
+.imagem-1{
+  grid-row: span 2;
+  align-self: end;
+}
+.imagem-2{
+  align-self: end;
+}
+/* Style*/
+p{
+  font-size: 1.5em;
+  line-height: 1.6;
+  letter-spacing: -0.005em;
+  color: rgba(0, 0, 0, 0.7);
+}
+.informacoes p + p{
+  margin-top: 37.5px;
+}
+.titulo{
+  color: #b07dfb;
+}
+.titulo h1{
+  font-size: 4.7em;
+  line-height: 1;
+  font-weight: 700;
+}
+.titulo span{
+  font-size: 1.1em;
+  font-style: italic;
+}
+/*  */
+.numero{
+  font-size: 3.75em;
+  line-height: 1;
+  padding: 10px 10px 20px 10px;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  border-radius: 5px 5px 0 0;
+}
+.caracteristicas{
+  border-radius: 5px;
+  display: flex;
+  color: #b07dfb;
+  align-items: flex-start;
+  gap: 37.5px;
+  
+}
+
+.caracteristicas > div{
+  width: 100px;
+  display: grid;
+  text-align: center;
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+  border-radius: 5px;
+}
+.rotulo{
+  font-size: 1.25em;
+  padding: 5px;
+}
+.destaque{
+  font-size: 1.4em;
+  color: #b07dfb;
+  max-width: 20em;
+}
+.citacao, .atributos{
+  align-self: start;
+  padding: 37.5px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+}
+.citacao p{
+  font-size: 1.875em;
+  font-style: italic;
+  text-align: center;
+  max-width: 625px;
+  margin: 0 auto;
+  color: white;
+}
+.atributos li{
+ color: white;
+ font-family: 'Courier New', Courier, monospace;
+ font-size: 1.4em;
+ padding: 18.75px;
+}
+.atributos li + li{
+  border-top: 2px solid #b07dfb;
+}
+
+/* Responsivo */
+@media(max-width:1270px){
+  .destaque{
+    font-size: 1.2em;
+  }
+  .atributos li{
+    font-size: 1.1em;
+    padding: 18.75px;
+   }
+   citacao, .atributos{
+    padding: 30px;
+  }
+  .citacao p{
+    font-size: 1.5em;
+    max-width: 500px;
+  }
+  .rotulo{
+    font-size: 1em;
+  }
+  .content {
+    max-width: 1000px;
+    padding: 30px;
+    gap: 30px;
+  }
+  p{
+    font-size: 1.3em;
+  }
+  .informacoes p + p{
+    margin-top: 30px;
+  }
+  .titulo h1{
+    font-size: 4.5em;
+  }
+  .titulo span{
+    font-size: 1em;
+    font-style: italic;
+  }
+  /*  */
+  .numero{
+    font-size: 3.2em;
+  }
+  .caracteristicas{
+    gap: 30px;
+  }
+  .caracteristicas > div{
+    width: 80px;
+  }
+}
+@media (max-width:960px){
+  .destaque{
+    font-size: 1em;
+  }
+}
+@media (max-width:600px){
+  .content{
+    grid-template-columns: auto;
+  }
+  .destaque{
+    font-size: 1.3em;
+  }
+}

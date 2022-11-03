@@ -1,0 +1,55 @@
+.sidenav{
+  background: #fafbfc;
+  padding: 37.5px;
+}
+.sidenav li a{
+  display: block;
+  min-width: 75px;
+  max-width: 125px;
+  margin: 0 auto 37.5px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+  transition: .2s ease-out;
+}
+.sidenav li a:hover{
+  background: #b07dfb;
+}
+
+@keyframes seta {
+  from {
+    right: 30px;
+  }
+  to {
+    right: 20px;
+  }
+}
+
+/* Responsivo */
+@media (max-width:760px){
+  .sidenav{
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    padding: 0 20px;
+    position: relative;
+  }
+  .sidenav::after{
+    content: "\2192";
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    color: rgba(0, 0, 0, .3);
+    animation: seta .5s ease-in 0s infinite alternate;
+  }
+  .sidenav ul{
+    display: flex;
+  }
+  .sidenav ul li{
+    flex: 1 0 75px;
+  }
+  .sidenav li a{
+    margin: 30px 30px 30px 0px;
+  }
+}

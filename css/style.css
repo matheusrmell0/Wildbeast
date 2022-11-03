@@ -1,0 +1,16 @@
+/* Global */
+@import "./global/header.css";
+@import "./global/footer.css";
+@import "./global/global.css";
+
+/* Grids */
+@import "./grid-layout/grid-geral.css";
+@import "./grid-layout/sidenav.css";
+@import "./grid-layout/content.css";
+@import "./grid-layout/anuncios.css";
+
+
+
+/* *{
+  border: 1px solid gray;
+} */
