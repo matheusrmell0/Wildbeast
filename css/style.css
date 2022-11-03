@@ -2,6 +2,7 @@
 @import "./global/header.css";
 @import "./global/footer.css";
 @import "./global/global.css";
+@import "./global/animacao.css";
 
 /* Grids */
 @import "./grid-layout/grid-geral.css";

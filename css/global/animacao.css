@@ -1,0 +1,22 @@
+.js [data-anime] {
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.js [data-anime="left"] {
+  transform: translate3d(-50px, 0, 0);
+}
+.js [data-anime="right"] {
+  transform: translate3d(50px, 0, 0);
+}
+.js [data-anime="top"] {
+  transform: translate3d(0, 50px, 0);
+}
+.js [data-anime="bottom"] {
+  transform: translate3d(0, 0, 0);
+}
+
+.js [data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
